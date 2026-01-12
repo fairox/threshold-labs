@@ -6,12 +6,12 @@ This repository houses the digital infrastructure for the Threshold Applied Rese
 
 ## Repository Structure
 
-- **`/web-app`**: The primary Next.js application.
+- **`/frontend`**: The primary Next.js application.
   - Interactive "Litema" Digital Flipbook
   - Research Deck & Gamification
   - Signal Intelligence Dashboards
 - **`/directives`**: Standard Operating Procedures (SOPs) for research agents.
-- **`/execution`**: Python scripts for lab instrumentation and signal processing.
+- **`/backend`**: Python scripts for lab instrumentation and signal processing.
 - **`/lab_assets`**: Raw data, images, and design assets.
 
 ## System Prompts & Identity
