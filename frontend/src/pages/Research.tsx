@@ -1,14 +1,10 @@
-"use client";
 
-import { Header } from "@/components/layout/Header";
 import { TrumpCard } from "@/components/research/TrumpCard";
-import { AlgorithmicBotanyCard } from "@/components/research/AlgorithmicBotanyCard";
 import { researchAssets } from "@/lib/data/assets";
 
 export default function ResearchPage() {
     return (
-        <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-foreground">
-            <Header />
+        <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-foreground">
 
             <div className="pt-32 px-4 md:px-12 pb-12 max-w-[1400px] mx-auto">
                 <div className="mb-12">
@@ -22,11 +18,7 @@ export default function ResearchPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {researchAssets.map((asset) => (
-                        asset.id === "BIO-099" ? (
-                            <AlgorithmicBotanyCard key={asset.id} />
-                        ) : (
-                            <TrumpCard key={asset.id} asset={asset} />
-                        )
+                        <TrumpCard key={asset.id} asset={asset} />
                     ))}
 
                     {/* Placeholder for "Add New" or Coming Soon */}
@@ -35,6 +27,6 @@ export default function ResearchPage() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }

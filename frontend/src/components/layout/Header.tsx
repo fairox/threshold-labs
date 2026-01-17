@@ -1,12 +1,9 @@
-"use client";
-
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 export function Header() {
     return (
         <header className="fixed top-0 left-0 w-full p-8 flex justify-between items-start z-50 text-foreground mix-blend-difference invert dark:invert-0">
-            <Link href="/" className="group">
+            <Link to="/" className="group">
                 <div className="text-sm font-medium leading-tight tracking-tight uppercase">
                     <div>Threshold</div>
                     <div>Applied</div>
@@ -16,17 +13,17 @@ export function Header() {
             </Link>
 
             <nav className="flex gap-6 uppercase text-xs font-semibold tracking-widest">
-                <Link href="/research" className="hover:opacity-70 transition-opacity">
+                <Link to="/research" className="hover:opacity-70 transition-opacity">
                     Research
                 </Link>
-                <Link href="/manifesto" className="text-red-600 hover:text-red-500 transition-colors">
+                <Link to="/manifesto" className="text-red-600 hover:text-red-500 transition-colors">
                     Manifesto
                 </Link>
-                <Link href="/litema" className="hover:opacity-70 transition-opacity">
+                <Link to="/litema" className="hover:opacity-70 transition-opacity">
                     Litema
                 </Link>
                 <Link
-                    href="#about"
+                    to="#about"
                     className="hover:opacity-70 transition-opacity"
                 >
                     About

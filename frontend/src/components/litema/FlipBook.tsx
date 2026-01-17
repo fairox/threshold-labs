@@ -1,11 +1,9 @@
-"use client";
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookPage } from "@/lib/data/book-content";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 interface FlipBookProps {
     pages: BookPage[];
@@ -15,21 +13,18 @@ export function FlipBook({ pages }: FlipBookProps) {
     // Current spread index (0 = Cover, 2 = Pages 1-2, etc.)
     // We treat the book as having even spreads mostly.
     const [currentSpread, setCurrentSpread] = useState(0);
-    const [direction, setDirection] = useState(0);
 
     // Calculate total spreads (roughly pages / 2)
     const totalSpreads = Math.ceil(pages.length / 2) + 1;
 
     const goNext = () => {
         if (currentSpread < totalSpreads - 1) {
-            setDirection(1);
             setCurrentSpread(prev => prev + 1);
         }
     };
 
     const goPrev = () => {
         if (currentSpread > 0) {
-            setDirection(-1);
             setCurrentSpread(prev => prev - 1);
         }
     };
@@ -57,7 +52,7 @@ export function FlipBook({ pages }: FlipBookProps) {
                 <div className="text-xs font-mono tracking-widest opacity-50">
                     SPREAD {currentSpread + 1} / {totalSpreads}
                 </div>
-                <Link href="/litema" className="p-2 hover:bg-white/10 rounded-full transition-colors">
+                <Link to="/litema" className="p-2 hover:bg-white/10 rounded-full transition-colors">
                     <X className="w-6 h-6" />
                 </Link>
             </div>
