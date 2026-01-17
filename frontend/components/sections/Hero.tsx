@@ -11,7 +11,7 @@ export function Hero() {
                 {/* Left decoration text */}
                 <div className="hidden lg:block lg:col-span-2 pt-2">
                     <div className="text-xs font-medium leading-tight lowercase">
-                        b-lab<br />change<br />starts<br />within.
+                        threshold<br />myth &<br />machine.
                     </div>
                 </div>
 
@@ -24,13 +24,9 @@ export function Hero() {
                         className="text-6xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold leading-[0.8] tracking-tighter uppercase break-words"
                     >
                         <div className="flex flex-col">
-                            <span>WE USE</span>
-                            <span>OUR</span>
-                            <span>ROBOTS</span>
-                            <span>UNIQUE</span>
-                            <span className="pl-12 md:pl-24">CREATE</span>
-                            <span>MEMORAB</span>
-                            <span>LE XP.</span>
+                            <span>DESIGN</span>
+                            <span>BY</span>
+                            <span>THRESHOLD</span>
                         </div>
                     </motion.h1>
 
@@ -40,7 +36,7 @@ export function Hero() {
                         transition={{ delay: 0.5 }}
                         className="text-xs text-neutral-500 mt-8 max-w-[150px]"
                     >
-                        interactive robotic<br />coffee shop.
+                        applied research<br />division.
                     </motion.p>
                 </div>
 
@@ -54,7 +50,7 @@ export function Hero() {
                     >
                         <div className="text-right">
                             <div className="w-20 h-20 rounded-full border border-current flex items-center justify-center ml-auto">
-                                <span className="text-[10px] font-bold text-center leading-tight uppercase">CHANGE<br />STARTS<br />WITHIN.</span>
+                                <span className="text-[10px] font-bold text-center leading-tight uppercase">MYTH<br />&<br />MACHINE</span>
                             </div>
                         </div>
 

@@ -2,6 +2,7 @@
 
 import { Header } from "@/components/layout/Header";
 import { TrumpCard } from "@/components/research/TrumpCard";
+import { AlgorithmicBotanyCard } from "@/components/research/AlgorithmicBotanyCard";
 import { researchAssets } from "@/lib/data/assets";
 
 export default function ResearchPage() {
@@ -21,7 +22,11 @@ export default function ResearchPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {researchAssets.map((asset) => (
-                        <TrumpCard key={asset.id} asset={asset} />
+                        asset.id === "BIO-099" ? (
+                            <AlgorithmicBotanyCard key={asset.id} />
+                        ) : (
+                            <TrumpCard key={asset.id} asset={asset} />
+                        )
                     ))}
 
                     {/* Placeholder for "Add New" or Coming Soon */}

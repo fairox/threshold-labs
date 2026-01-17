@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "b-lab | Change Starts Within",
-  description: "Interactive robotic coffee shop.",
+  title: "Threshold Applied Research",
+  description: "Interrogation over Production.",
 };
 
 export default function RootLayout({

@@ -8,10 +8,10 @@ export function Header() {
         <header className="fixed top-0 left-0 w-full p-8 flex justify-between items-start z-50 text-foreground mix-blend-difference invert dark:invert-0">
             <Link href="/" className="group">
                 <div className="text-sm font-medium leading-tight tracking-tight uppercase">
-                    <div>b-lab</div>
-                    <div>change</div>
-                    <div>starts</div>
-                    <div>within.</div>
+                    <div>Threshold</div>
+                    <div>Applied</div>
+                    <div>Research</div>
+                    <div>Division.</div>
                 </div>
             </Link>
 

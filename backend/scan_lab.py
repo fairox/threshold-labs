@@ -34,12 +34,22 @@ def main():
             
         print(f"Scanning: {root_path}")
         for root, dirs, files in os.walk(root_path):
+            # Exclude node_modules and .git
+            if "node_modules" in dirs:
+                dirs.remove("node_modules")
+            if ".git" in dirs:
+                dirs.remove(".git")
+                
             for file in files:
                 full_path = os.path.join(root, file)
                 # Skip hidden files
                 if file.startswith("."):
                     continue
-                assets.append(get_file_info(full_path))
+                    
+                try:
+                    assets.append(get_file_info(full_path))
+                except Exception as e:
+                    print(f"Error scanning {full_path}: {e}")
                 
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(assets, f, indent=2)

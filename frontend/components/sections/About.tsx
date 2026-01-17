@@ -9,13 +9,13 @@ export function About() {
 
                     <div className="space-y-6 text-xs md:text-sm font-medium leading-relaxed max-w-sm">
                         <p>
-                            We at Rabbit Lab could not allow for the coffee production to lose its artistic elements and soul. Some world needs automatic, masterful baristas that keep the higher essence of coffee in tact.
+                            We operate within a 3-layer architecture designed to turn probabilistic data into deterministic studio intelligence. We do not simply produce; we interrogate.
                         </p>
                     </div>
 
                     <div className="space-y-6 text-xs md:text-sm font-medium leading-relaxed max-w-sm">
                         <p>
-                            For this reason, we digitized the processes of professional & traditional European coffee making.
+                            From Signal Intelligence to Material Forensics, our work bridges the gap between digital voids and physical reality.
                         </p>
                     </div>
                 </div>

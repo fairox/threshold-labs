@@ -77,5 +77,24 @@ export const researchAssets: ResearchAsset[] = [
             fileRef: "PAB_One_Pager.pdf",
         },
         description: "Strategic invitation protocol for the Pan-African Biennale. Testing the velocity of diplomatic design signals.",
+    },
+    {
+        id: "BIO-099",
+        title: "Algorithmic Botany",
+        subtitle: "Morphogenetic Code",
+        suit: "Signal",
+        image: "", // Will be procedurally generated in component
+        stats: {
+            complexity: 9.2, // High mathematical complexity
+            resilience: 9.8, // Analysis of nature's timeless code
+            impact: 8.5,     // Bio-mimicry potential
+            velocity: 4.5,   // Academic but accelerating
+        },
+        meta: {
+            location: "Lab Simulation",
+            year: "2026",
+            fileRef: "L_SYSTEMS_V4.py",
+        },
+        description: "Deciphering the recursive growth signatures of organic matter. Using L-systems to generate architectural blueprints from soil logic.",
     }
 ];
