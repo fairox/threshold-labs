@@ -1,9 +1,3 @@
-This update reimagines your `AGENTS.md` by shifting the mindset from a standard "business automation" tool to an **Applied Research Assistant** operating within the **Design by Threshold** lab.
-
-The architecture is now framed around **Research Protocols** (Directives), **Principal Reasoning** (Orchestration), and **Lab Instrumentation** (Execution).
-
----
-
 # AGENTS.md
 
 > **Lab Status:** Mirrored across CLAUDE.md, AGENTS.md, and GEMINI.md. These instructions define the behavior of the Design by Threshold autonomous research layer.

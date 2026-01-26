@@ -11,7 +11,7 @@ This repository houses the digital infrastructure for the Threshold Applied Rese
   - Research Deck & Gamification
   - Signal Intelligence Dashboards
 - **`/directives`**: Standard Operating Procedures (SOPs) for research agents.
-- **`/backend`**: Python scripts for lab instrumentation and signal processing.
+- **`/execution`**: Python scripts for lab instrumentation and signal processing.
 - **`/lab_assets`**: Raw data, images, and design assets.
 
 ## System Prompts & Identity
